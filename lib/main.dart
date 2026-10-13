@@ -1,21 +1,8 @@
+import 'package:contacts_search/app.dart';
+import 'package:contacts_search/core/di/injection.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  configureDependencies();
   runApp(const ContactsApp());
-}
-
-class ContactsApp extends StatelessWidget {
-  const ContactsApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Contacts Search',
-      home: Scaffold(
-        body: Center(
-          child: Text('Contacts Search'),
-        ),
-      ),
-    );
-  }
 }
