@@ -1,0 +1,39 @@
+name: contacts_search
+description: Searchable, paginated contacts list backed by a mock API.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_hooks: ^0.21.3+1
+
+  # State management
+  flutter_bloc: ^9.1.1
+  # Dependency injection
+  get_it: ^9.3.0
+  injectable: ^3.0.0
+
+  # Code generation
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.12.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  # Code generation
+  build_runner: ^2.15.1
+  freezed: ^3.2.0
+  json_serializable: ^6.14.1
+  injectable_generator: ^3.0.2
+
+flutter:
+  uses-material-design: true
